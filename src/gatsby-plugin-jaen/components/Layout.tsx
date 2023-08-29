@@ -1,7 +1,11 @@
-import {LayoutProps} from '@atsnek/jaen'
+import {LayoutProps, useAuthenticationContext} from '@atsnek/jaen'
 import {Box, Heading} from '@chakra-ui/react'
 
 const Layout: React.FC<LayoutProps> = ({children, pageProps}) => {
+  const {isAuthenticated} = useAuthenticationContext()
+
+  if (!isAuthenticated) return null
+
   return (
     <Box>
       <Box

@@ -38,10 +38,10 @@
     signedsource "^1.0.0"
     yargs "^15.3.1"
 
-"@atsnek/jaen@^1.0.0-rc.1":
-  version "1.0.0-rc.1"
-  resolved "https://registry.yarnpkg.com/@atsnek/jaen/-/jaen-1.0.0-rc.1.tgz#8ce01ab2a064ed7aa4d3933d8844cd465df6be21"
-  integrity sha512-fEbT5f2iFyZCzEbExLVcmQJZI7ZY+6p5FRPtcxMduJxYFHRTTxD+fD150k+SHheHk67Rv4Ev61tx3F4QlPhwAw==
+"@atsnek/jaen@^1.0.0-rc.2":
+  version "1.0.0-rc.2"
+  resolved "https://registry.yarnpkg.com/@atsnek/jaen/-/jaen-1.0.0-rc.2.tgz#5f91289d0d4c3d8a80bcd40f120e95327bd23974"
+  integrity sha512-stKN3PORuhY+qCZgfL5K7F0VAONaa9CsB0OeR6Y74N280QK64YG667d2HussH0ALHuDh0QhPxwd+GZ6lw2bT/g==
   dependencies:
     "@chakra-ui/react" "^2.8.0"
     "@reduxjs/toolkit" "^1.9.5"
@@ -6812,11 +6812,6 @@ eslint@^7.32.0:
     text-table "^0.2.0"
     v8-compile-cache "^2.0.3"
 
-esm@^3.2.25:
-  version "3.2.25"
-  resolved "https://registry.yarnpkg.com/esm/-/esm-3.2.25.tgz#342c18c29d56157688ba5ce31f8431fbb795cc10"
-  integrity sha512-U1suiZ2oDVWv4zPO56S0NcR5QriEahGtdN2OR6FiOG4WJvcjBVFB0qI4+eKoWFH483PKGuLuu6V8Z4T5g63UVA==
-
 espree@^7.3.0, espree@^7.3.1:
   version "7.3.1"
   resolved "https://registry.yarnpkg.com/espree/-/espree-7.3.1.tgz#f2df330b752c6f55019f8bd89b7660039c1bbbb6"
@@ -7579,14 +7574,6 @@ gatsby-parcel-config@1.12.0:
     "@parcel/transformer-js" "2.8.3"
     "@parcel/transformer-json" "2.8.3"
 
-gatsby-plugin-compile-es6-packages@^2.1.1:
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-compile-es6-packages/-/gatsby-plugin-compile-es6-packages-2.1.1.tgz#e01626799b8d84887606b2f0e8f3fd429e6025b8"
-  integrity sha512-UfEbgiyI15yO2Kb+cAuSCIK/YyNz7baKBE/HhMuuLq+pyh1fhNW0x8swl/TZiH8QMqE8cgYGBGEUkdiFb1K6Lg==
-  dependencies:
-    "@babel/runtime" "^7.0.0"
-    regex-escape "^3.4.8"
-
 gatsby-plugin-image@^3.11.0:
   version "3.12.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-image/-/gatsby-plugin-image-3.12.0.tgz#903e84029ff74cbd4a1dbb6f755d01134678b9aa"
@@ -7607,10 +7594,10 @@ gatsby-plugin-image@^3.11.0:
     objectFitPolyfill "^2.3.5"
     prop-types "^15.8.1"
 
-gatsby-plugin-jaen@^1.0.0-rc.3:
-  version "1.0.0-rc.3"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-jaen/-/gatsby-plugin-jaen-1.0.0-rc.3.tgz#b1508ab0011b6df0ce9430c2a51f6b937027342e"
-  integrity sha512-uyflO51nnV+3/RyWg01tTjcLzhtz5zTiXrexyelOJWKGthhZXSt99OI/7WDaCFgnjF86fspLmP+mtBpBo31Jvw==
+gatsby-plugin-jaen@^1.0.0-rc.8:
+  version "1.0.0-rc.8"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-jaen/-/gatsby-plugin-jaen-1.0.0-rc.8.tgz#1d9327663bd6a643d889f24de7cde1deb94522de"
+  integrity sha512-1rVykM6+2uKb5kU/iRRcLA1JCnDC5rYCdIE/NU0W+iwbQ/CCCF5ISoOG22LAno0rvQtlMD5Cui3yKIYZYjp6RA==
   dependencies:
     "@chakra-ui/react" "^2.8.0"
     "@codemirror/lang-markdown" "^6.2.0"
@@ -7625,7 +7612,7 @@ gatsby-plugin-jaen@^1.0.0-rc.3:
     gatsby-plugin-sharp "^5.11.0"
     gatsby-plugin-ts-config "^2.1.3"
     gatsby-source-filesystem "^5.11.0"
-    gatsby-source-jaen "^1.0.0-rc.3"
+    gatsby-source-jaen "^1.0.0-rc.4"
     gatsby-transformer-sharp "^5.11.0"
     hast "^1.0.0"
     isomorphic-dompurify "^1.8.0"
@@ -7786,10 +7773,10 @@ gatsby-source-filesystem@^5.11.0:
     valid-url "^1.0.9"
     xstate "^4.38.0"
 
-gatsby-source-jaen@^1.0.0-rc.3:
-  version "1.0.0-rc.3"
-  resolved "https://registry.yarnpkg.com/gatsby-source-jaen/-/gatsby-source-jaen-1.0.0-rc.3.tgz#5381abeab8f8fd13d3068b681d44ee4ca45a1888"
-  integrity sha512-dAA5vqFsPW8uBBNEdXr8cJ7TkDvf1ZBv5H5N9+FpvUKgl61N6jPLDcUCYzJ0aAzXzMnQa19kQ9b67fz3GsZK8w==
+gatsby-source-jaen@^1.0.0-rc.4:
+  version "1.0.0-rc.4"
+  resolved "https://registry.yarnpkg.com/gatsby-source-jaen/-/gatsby-source-jaen-1.0.0-rc.4.tgz#a9f171e2aad70c15c5226492557262734d0ee82b"
+  integrity sha512-GF17aublCqy5vhz6DHlHA6mOnFOO43SRXJzY3RCxs8vkhPsKVo0PAM14GJe4tZLXWp9b7EMICu8lyOOyi5MPRg==
   dependencies:
     "@babel/parser" "^7.22.11"
     "@babel/traverse" "^7.22.11"
@@ -12641,11 +12628,6 @@ regenerator-transform@^0.15.2:
   integrity sha512-hfMp2BoF0qOk3uc5V20ALGDS2ddjQaLrdl7xrGXvAIow7qeWRM2VA2HuCHkUKk9slq3VwEwLNK3DFBqDfPGYtg==
   dependencies:
     "@babel/runtime" "^7.8.4"
-
-regex-escape@^3.4.8:
-  version "3.4.10"
-  resolved "https://registry.yarnpkg.com/regex-escape/-/regex-escape-3.4.10.tgz#b45afec7a6e793b786ad193dc3d18b46b5ae08e6"
-  integrity sha512-qEqf7uzW+iYcKNLMDFnMkghhQBnGdivT6KqVQyKsyjSWnoFyooXVnxrw9dtv3AFLnD6VBGXxtZGAQNFGFTnCqA==
 
 regexp-to-ast@0.5.0:
   version "0.5.0"
