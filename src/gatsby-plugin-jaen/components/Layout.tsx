@@ -1,27 +1,35 @@
-import {LayoutProps, useAuthenticationContext} from '@atsnek/jaen'
-import {Box, Heading} from '@chakra-ui/react'
+import { LayoutProps } from '@atsnek/jaen';
+import AppLayout from "../../liba/AppLayout";
+import { useLocation } from '@reach/router';
+import { CMSManagement} from 'gatsby-plugin-jaen';
 
-const Layout: React.FC<LayoutProps> = ({children, pageProps}) => {
-  const {isAuthenticated} = useAuthenticationContext()
+const Layout: React.FC<LayoutProps> = ({ children, pageProps }) => {
+  const path = useLocation().pathname;
+  const hiddenTopNavPaths = ['/profile', '/blog-post'];
 
-  if (!isAuthenticated) return null
+  const docsPaths = ['/blog'];
+
+
+  // if (path.startsWith('/admin') || path === '/') {
+  //   return children;
+  // }
 
   return (
-    <Box>
-      <Box
-        as="header"
-        bg="gray.800"
-        color="white"
-        p="4"
-        pos="sticky"
-        top="0"
-        zIndex="sticky">
-        <Heading as="h1">My Site</Heading>
-      </Box>
+    <CMSManagement>
+      <AppLayout
+        isBlog={docsPaths.some(docsPath => path.startsWith(docsPath))}
+        isCommunity={path.startsWith('/community')}
+        path={path}
+        // topNavProps={{
+        //   isVisible: !hiddenTopNavPaths.some(hiddenPath =>
+        //     path.startsWith(hiddenPath)
+        //   )
+        // }}
+      >
+        {children}
+      </AppLayout>
+    </CMSManagement>
+  );
+};
 
-      {children}
-    </Box>
-  )
-}
-
-export default Layout
+export default Layout;

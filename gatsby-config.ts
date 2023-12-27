@@ -8,14 +8,17 @@ const config: GatsbyConfig = {
   flags: {
     DEV_SSR: true
   },
+  jsxRuntime: 'automatic',
   plugins: [
     {
       resolve: `gatsby-plugin-jaen`,
       options: {
-        // The folder where the page templates are located
-        pageTemplateFolder: `src/templates`,
-        snekResourceId: `<YOUR_SNEK_RESOURCE_ID>`
+        snekResourceId: `2c1408ca-84bb-4981-af1f-7d63b2b6f34d`
       }
+    },
+    {
+      resolve: `gatsby-jaen-mailpress`,
+      options: {}
     }
   ]
 }
